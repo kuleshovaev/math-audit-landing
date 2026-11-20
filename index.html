@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Математический аудит ТЗ для цифрового двойника — воркшоп для предприятий</title>
+  <meta name="description" content="Аудит ТЗ на цифровой двойник до запуска в разработку: проверка совместности, единственности и устойчивости модели. Воркшоп 16 академических часов. Контрольный лист и регламент математической приёмки ТЗ.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo">Математическая приёмка ТЗ</a>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="#pain">Проблема</a></li>
+          <li><a href="#why-math">Почему математика</a></li>
+          <li><a href="#workshop">Воркшоп</a></li>
+          <li><a href="#result">Результат</a></li>
+          <li><a href="#formats">Форматы</a></li>
+          <li><a href="#contacts" class="nav-cta">Запросить аудит</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ЭКРАН 1: HERO -->
+    <section id="hero" class="hero" style="background-image: url('hero-bg.jpg');">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">B2B · Воркшоп для предприятий · 16 академических часов</p>
+        <h1>Цифровой двойник не запустится, если ТЗ математически некорректно</h1>
+        <p class="hero-subtitle">
+          Аудит до разработки: проверяем совместность, единственность и устойчивость модели.
+          За 16 академических часов ваша команда получает контрольный лист и регламент
+          математической приёмки ТЗ — без привлечения внешних IT-архитекторов и физиков процессов.
+        </p>
+        <a href="#contacts" class="btn btn-primary">Запросить пилотный аудит ТЗ</a>
+        <p class="hero-note">Предварительный математический скрининг одного ТЗ — бесплатно.</p>
+      </div>
+    </section>
+
+    <!-- ЭКРАН 2: БОЛЬ -->
+    <section id="pain" class="section pain-section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Ошибка в модели обнаруживается слишком поздно — уже в разработке</h2>
+          <p>
+            20–30% ТЗ на цифровые двойники возвращаются на доработку. Система уравнений
+            оказывается вырожденной, решение — неединственным или отсутствует, а критерий
+            эффективности — незнакоопределённым. На бумаге модель выглядит рабочей.
+            В разработке — останавливает проект, тянет за собой переделку ТЗ и сдвигает сроки CAPEX.
+          </p>
+        </div>
+
+        <div class="pain-grid" id="pain-grid">
+          <!-- Карточки боли подтягиваются из data.json -->
+        </div>
+
+        <figure class="section-image">
+          <img src="pain-blueprint.jpg" alt="Технические чертежи и модель цифрового двойника с отметкой о возврате ТЗ" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ЭКРАН 3: ПОЧЕМУ МАТЕМАТИКА -->
+    <section id="why-math" class="section why-math-section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Проблема не в софте и не в описании процесса. Проблема в математике</h2>
+          <p>
+            IT-подрядчик отвечает за архитектуру системы, технолог — за физику процесса.
+            Но если система уравнений вырождена, а критерий эффективности не является
+            знакоопределённым, — ни софт, ни описание процесса этого не исправят.
+            Корректность модели проверяется ядром линейной алгебры: ранги матриц,
+            теорема Кронекера–Капелли, критерий Сильвестра, главные миноры.
+            Именно этот слой чаще всего выпадает из приёмки ТЗ.
+          </p>
+        </div>
+
+        <ul class="competence-list">
+          <li>Ранги матриц и совместность системы уравнений</li>
+          <li>Теорема Кронекера–Капелли — есть ли решение вообще</li>
+          <li>Единственность решения и вырожденность модели</li>
+          <li>Критерий Сильвестра и главные миноры — знакоопределённость критерия эффективности</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ЭКРАН 4: ВОРКШОП -->
+    <section id="workshop" class="section workshop-section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Математический аудит ТЗ на цифровой двойник — 16 академических часов</h2>
+          <p>
+            Интенсивный воркшоп для инженерной команды заказчика. Разбираем ТЗ вашего предприятия,
+            а не абстрактные примеры. Проверяем модель на совместность, единственность и устойчивость
+            до того, как она уйдёт в разработку.
+          </p>
+        </div>
+
+        <ol class="steps-list" id="workshop-steps">
+          <!-- Шаги воркшопа подтягиваются из data.json -->
+        </ol>
+      </div>
+    </section>
+
+    <!-- ЭКРАН 5: РЕЗУЛЬТАТ -->
+    <section id="result" class="section result-section">
+      <div class="container">
+        <div class="section-head">
+          <h2>На выходе — не «знания», а документ, который остаётся у предприятия</h2>
+          <p>
+            По итогам воркшопа ваша команда получает отчуждаемый инструмент:
+            <strong>«Контрольный лист и регламент математической приёмки ТЗ на цифровой двойник»</strong>.
+            Это не конспект лекции. Это рабочий документ, по которому вы принимаете следующие ТЗ — без нас.
+          </p>
+        </div>
+
+        <div class="result-grid">
+          <ul class="result-list">
+            <li>Контрольный лист проверки ТЗ (чек-лист приёмки)</li>
+            <li>Регламент математической приёмки — кто, что и в какой момент проверяет</li>
+            <li>Критерии «стоп» — когда ТЗ нельзя отдавать в разработку</li>
+          </ul>
+          <figure class="section-image">
+            <img src="result-checklist.jpg" alt="Контрольный лист и регламент математической приёмки ТЗ рядом с планшетом с моделью цифрового двойника" loading="lazy">
+          </figure>
+        </div>
+
+        <p class="result-note">
+          Документ остаётся у предприятия и применяется к каждому следующему ТЗ на цифровой двойник.
+        </p>
+      </div>
+    </section>
+
+    <!-- ЭКРАН 6: ДЛЯ КОГО / НЕ ДЛЯ КОГО -->
+    <section id="audience" class="section audience-section">
+      <div class="container audience-grid">
+        <div class="audience-col">
+          <h2>Для кого</h2>
+          <ul>
+            <li>Главный инженер предприятия</li>
+            <li>Директор по производству</li>
+            <li>Руководитель проектов модернизации и CAPEX</li>
+            <li>Инженерная команда, которая готовит или принимает ТЗ на цифровой двойник</li>
+          </ul>
+        </div>
+        <div class="audience-col audience-col-muted">
+          <h2>Не для кого</h2>
+          <ul>
+            <li>IT-подрядчики и интеграторы</li>
+            <li>Специалисты, которым нужен общий курс по линейной алгебре</li>
+            <li>Проекты без привязки к реальному ТЗ</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЭКРАН 7: АВТОР -->
+    <section id="author" class="section author-section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Кафедра, которая отвечает за математическую корректность</h2>
+          <p>
+            Воркшоп ведёт кафедра в рамках дисциплины «Линейная алгебра и аналитическая геометрия».
+            Ядро компетенций — 100% покрытие задач аудита ТЗ, без привлечения внешних экспертов
+            по физике процессов и IT-архитектуре. Это принципиально: за математическую корректность
+            модели отвечает тот, кто её проверяет.
+          </p>
+        </div>
+
+        <dl class="facts-list">
+          <div class="fact-item">
+            <dt>Дисциплина</dt>
+            <dd>Линейная алгебра и аналитическая геометрия</dd>
+          </div>
+          <div class="fact-item">
+            <dt>Формат</dt>
+            <dd>Интенсивный воркшоп, 16 академических часов</dd>
+          </div>
+          <div class="fact-item">
+            <dt>База</dt>
+            <dd>Выпускники прошлых лет</dd>
+          </div>
+          <div class="fact-item">
+            <dt>Активность</dt>
+            <dd>Участие в профильных конференциях</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ЭКРАН 8: ФОРМАТЫ -->
+    <section id="formats" class="section formats-section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Три формата — под стадию вашего проекта</h2>
+        </div>
+        <div class="formats-grid" id="formats-grid">
+          <!-- Карточки форматов подтягиваются из data.json -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ЭКРАН 9: ВОЗРАЖЕНИЯ -->
+    <section id="faq" class="section faq-section">
+      <div class="container">
+        <h2>Частые вопросы</h2>
+
+        <details class="faq-item">
+          <summary>Почему 16 часов?</summary>
+          <p>
+            Этого достаточно, чтобы разобрать реальное ТЗ, проверить совместность, единственность,
+            устойчивость и критерий эффективности, и передать команде рабочий регламент приёмки.
+            Мы не растягиваем программу ради «академичности».
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Почему без физиков и IT-архитекторов?</summary>
+          <p>
+            Потому что проблема, которую мы решаем, — математическая. Если модель вырождена
+            или критерий незнакоопределён, физика процесса и архитектура софта этого не исправят.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Как измерим эффект?</summary>
+          <p>
+            До воркшопа — доля ТЗ, возвращённых на доработку. После — количество ТЗ, отклонённых
+            на этапе математической приёмки до запуска в разработку. Контрольный лист даёт
+            измеримый критерий «стоп».
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Что если модель уже в разработке?</summary>
+          <p>
+            Тем важнее остановиться сейчас. Аудит покажет, какие части модели математически
+            некорректны, и что можно исправить до того, как переделка станет дороже.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ЭКРАН 10: CTA + ФОРМА -->
+    <section id="contacts" class="section contacts-section">
+      <div class="container contacts-inner">
+        <div class="contacts-text">
+          <h2>Пришлите ТЗ на предварительный математический скрининг</h2>
+          <p>
+            Посмотрим на модель до того, как она уйдёт в разработку. Ответим, есть ли
+            математические риски и стоит ли идти на полный аудит.
+          </p>
+        </div>
+
+        <form class="lead-form" id="lead-form" novalidate>
+          <div class="form-field">
+            <label for="company">Предприятие</label>
+            <input type="text" id="company" name="company" required autocomplete="organization">
+          </div>
+          <div class="form-field">
+            <label for="position">Должность</label>
+            <input type="text" id="position" name="position" required autocomplete="organization-title">
+          </div>
+          <div class="form-field">
+            <label for="contact">Контакт (телефон или email)</label>
+            <input type="text" id="contact" name="contact" required autocomplete="email">
+          </div>
+          <div class="form-field">
+            <label for="task">Задача (кратко)</label>
+            <textarea id="task" name="task" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Запросить пилотный аудит</button>
+          <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку контактных данных для ответа на запрос.</p>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Математическая приёмка ТЗ на цифровой двойник</p>
+      <p>Воркшоп для предприятий · 16 академических часов</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
